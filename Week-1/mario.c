@@ -7,6 +7,9 @@ int main(void)
     string wish = get_string("What symbol you like??\n");
     
    int height = get_int("What height you want:\n");
+    while(height<1){
+        height = get_int("What height you want, better be positive integer:\n");
+    }
     for(int i=1; i<=height; i++){
       for(int n = height; n >= i; n--){
           printf("%s", space);
